@@ -7,7 +7,7 @@ class PantallaUno extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Pantalla Uno',
           style: TextStyle(
             color: Colors.white,
@@ -18,22 +18,63 @@ class PantallaUno extends StatelessWidget {
         centerTitle: true,
       ),
       body: Column(
+        mainAxisAlignment:
+            MainAxisAlignment.center, // Centra los botones verticalmente
         children: [
-          Center(
-            child: ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/pantalla2');
-              },
-              child: const Text('Ver Pantalla'),
-            ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/pantalla2');
+            },
+            child: const Text('Ver Pantalla 2'),
           ),
-          Center(
-            child: ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/pantalla3');
-              },
-              child: const Text('Ver Pantalla'),
-            ),
+          const SizedBox(height: 10), // Espacio entre botones
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/pantalla3');
+            },
+            child: const Text('Ver Pantalla 3'),
+          ),
+          const SizedBox(height: 10),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/pantalla4');
+            },
+            child: const Text('Ver Pantalla 4'),
+          ),
+          const SizedBox(height: 10),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/pantalla5');
+            },
+            child: const Text('Ver Pantalla 5'),
+          ),
+          const SizedBox(height: 10),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/pantalla6');
+            },
+            child: const Text('Ver Pantalla 6'),
+          ),
+          const SizedBox(height: 10),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/pantalla7');
+            },
+            child: const Text('Ver Pantalla 7'),
+          ),
+          const SizedBox(height: 10),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/pantalla8');
+            },
+            child: const Text('Ver Pantalla 8'),
+          ),
+          const SizedBox(height: 10),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/pantalla9');
+            },
+            child: const Text('Ver Pantalla 9'),
           ),
         ],
       ),
